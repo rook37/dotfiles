@@ -10,9 +10,6 @@ alias ls='eza --icons --git'
 alias lst='eza -l --tree --icons --git'
 alias lsa='eza -al --icons --git' 
 alias lsta='eza -al --tree --icons --git'
- 
-# --- fd > find ---
-alias find='fd'
 
 # --- load notes layout ---
 alias loadnotes="$HOME/.config/i3/layouts/learning/studylaunch.sh" #follow with the workspace you want it on
