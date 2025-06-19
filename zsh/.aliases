@@ -1,0 +1,38 @@
+
+# --- cls > clear ---
+alias cls='clear'
+ 
+# --- src > source---
+alias src='source'
+  
+# --- eza > ls ---
+alias ls='eza --icons --git'
+alias lst='eza -l --tree --icons --git'
+alias lsa='eza -al --icons --git' 
+alias lsta='eza -al --tree --icons --git'
+ 
+# --- fd > find ---
+alias find='fd'
+
+# --- load notes layout ---
+alias loadnotes="$HOME/.config/i3/layouts/learning/studylaunch.sh" #follow with the workspace you want it on
+
+# --- tmux QoL aliases ---
+alias tma="tmux attach -t"          # opens session with whatever name follows
+alias tmls="tmux ls"                # shows open sessions
+alias tmo="tmux choose-session"     # opens list of current sessions as a selectable panel
+alias tmn="TMUX= tmux new -s"       # creates new session with whatever name follows. 
+                                    # TMUX= allows this to create a new top-level session from inside one as well.
+alias tmrn="tmux select-pane -T"    # renames pane with whatever string follows
+alias tmpane="tmrn"
+alias tm="tmux"
+alias tmd='tmux detach'             # i am lazy lol
+
+# --- runelite 4 lazy typers ---
+alias runelite="flatpak run com.adamcake.Bolt"
+
+# --- chrome pls chill ---
+alias google-chrome="google-chrome-stable --disable-gpu --disable-features-UseOzonePlatform"
+
+# --- lets try zen ---
+alias zen="flatpak run app.zen_browser.zen"

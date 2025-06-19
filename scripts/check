@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Printing out stowed files. These should all show symlinks:"
+ls -l ~/.zshrc ~/.aliases ~/.tmux.conf ~/.config/nvim/init.lua ~/.config/kitty/kitty.conf ~/.config/i3/config
+
