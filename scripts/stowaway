@@ -1,4 +1,15 @@
 #!/bin/bash
-cd "$(dirname "$0")"
-stow zsh tmux nvim kitty i3
+
+# ensure target dirs exist
+mkdir -p "$HOME/.config/nvim" "$HOME/.config/kitty" "$HOME/.config/i3"
+
+# stow dotfiles into ~/.config/<tool>
+stow --dir="$HOME/dotfiles/nvim"  --target="$HOME/.config/nvim"  .
+stow --dir="$HOME/dotfiles/kitty" --target="$HOME/.config/kitty" .
+stow --dir="$HOME/dotfiles/i3"    --target="$HOME/.config/i3"    .
+
+# stow home-level dotfiles as usual
+stow --dir="$HOME/dotfiles/zsh"   --target="$HOME" .
+stow --dir="$HOME/dotfiles/tmux"  --target="$HOME" .
+stow --dir="$HOME/dotfiles/scripts" --target="$HOME" .
 
