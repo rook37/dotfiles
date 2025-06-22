@@ -1,11 +1,12 @@
 # path to oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 
-# theme (we're going custom, so blank is fine)
+# theme (
 ZSH_THEME=""
 
-# plugins for productivity
+# plugins 
 plugins=(git z zsh-autosuggestions zsh-syntax-highlighting tmux)
+export GIT_PAGER=cat
 
 # load oh-my-zsh
 source "$ZSH/oh-my-zsh.sh"
@@ -18,22 +19,25 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 
 PROMPT='%F{green}ark%f %F{cyan}%1~%f %F{yellow}${vcs_info_msg_0_}%f %# '
 
-# enable autosuggestions (plugin must be installed)
+# autosuggest init 
 ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 if [ -f "$ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
   source "$ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
 
-# enable syntax highlighting (plugin must be installed)
+# syntax highlight init
 if [ -f "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
   source "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
 
-# fzf config (if installed)
+# fzf config 
 [ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 
 # load personal aliases if they exist
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
+
+# z init
+eval "$(zoxide init zsh)"
 
 # environment
 export EDITOR=nvim

@@ -14,7 +14,13 @@ alias lsta='eza -al --tree --icons --git'
 # --- load notes layout ---
 alias loadnotes="$HOME/.config/i3/layouts/learning/studylaunch.sh" #follow with the workspace you want it on
 
-# --- tmux QoL aliases ---
+
+# ---------me vs the space bar---------
+
+alias ghelp="alias | grep -E 'git|^alias g'"
+
+    # --- tmux QoL aliases ---
+
 alias tm="tmux"
 alias tma="tmux attach -t"          # opens session with whatever name follows
 alias tmls="tmux ls"                # shows open sessions
@@ -23,7 +29,7 @@ alias tmn="TMUX= tmux new -s"       # creates new session with whatever name fol
                                     # TMUX= allows this to create a new top-level session from inside one as well.
 alias tmd='tmux detach'             # i am lazy lol
 
-#   renaming
+    #   renaming 
 
 alias tmrn="tmux rename-session"    # rename session shorthand
 alias tmp="tmux select-pane -T"     # pane rename shorthand
@@ -32,13 +38,10 @@ alias tmpl="tmux select-pane -L -T" # pane rename L
 alias tmpr="tmux select-pane -R -T" # pane rename R
 alias tmpd="tmux select-pane -D -T" # pane rename below
 
-
+# -------------programs---------------
 
 # --- runelite 4 lazy typers ---
 alias runelite="flatpak run com.adamcake.Bolt"
-
-# --- chrome pls chill ---
-alias google-chrome="google-chrome-stable --disable-gpu --disable-features-UseOzonePlatform"
 
 # --- lets try zen ---
 alias zen="flatpak run app.zen_browser.zen"
