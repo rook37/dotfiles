@@ -15,15 +15,24 @@ alias lsta='eza -al --tree --icons --git'
 alias loadnotes="$HOME/.config/i3/layouts/learning/studylaunch.sh" #follow with the workspace you want it on
 
 # --- tmux QoL aliases ---
+alias tm="tmux"
 alias tma="tmux attach -t"          # opens session with whatever name follows
 alias tmls="tmux ls"                # shows open sessions
 alias tmo="tmux choose-session"     # opens list of current sessions as a selectable panel
 alias tmn="TMUX= tmux new -s"       # creates new session with whatever name follows. 
                                     # TMUX= allows this to create a new top-level session from inside one as well.
-alias tmrn="tmux select-pane -T"    # renames pane with whatever string follows
-alias tmpane="tmrn"
-alias tm="tmux"
 alias tmd='tmux detach'             # i am lazy lol
+
+#   renaming
+
+alias tmrn="tmux rename-session"    # rename session shorthand
+alias tmp="tmux select-pane -T"     # pane rename shorthand
+alias tmpu="tmux select-pane -U -T" # pane rename above
+alias tmpl="tmux select-pane -L -T" # pane rename L
+alias tmpr="tmux select-pane -R -T" # pane rename R
+alias tmpd="tmux select-pane -D -T" # pane rename below
+
+
 
 # --- runelite 4 lazy typers ---
 alias runelite="flatpak run com.adamcake.Bolt"
