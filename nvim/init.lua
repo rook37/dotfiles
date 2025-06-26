@@ -3,7 +3,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require("ark.options")
 require("ark.keymaps")
 require("ark.plugins")
+require("ark.options")
 

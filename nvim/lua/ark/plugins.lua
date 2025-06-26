@@ -80,7 +80,15 @@ require('lazy').setup({
       })
     end
   },
-
+  -- theme --
+    {
+      'rebelot/kanagawa.nvim',
+      lazy = false,
+      priority = 1000,
+      config = function()
+        vim.cmd.colorscheme 'kanagawa-wave'  -- Options: 'wave', 'dragon', 'lotus'
+      end,
+    },
   -- Telescope
   {
     'nvim-telescope/telescope.nvim',
