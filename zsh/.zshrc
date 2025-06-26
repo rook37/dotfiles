@@ -62,11 +62,6 @@ autoload -Uz compinit
 compinit
 bindkey '^ ' autosuggest-accept
 
-# automatically launch tmux in a new incremented session
-if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ "$TERM_PROGRAM" != "tmux-startup" ]; then
-  tmux new-session
-fi
-
 # nvm setup
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
