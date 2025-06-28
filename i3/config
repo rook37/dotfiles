@@ -238,7 +238,8 @@ bindsym $mod+F12 exec ~/scripts/start_layout.sh
 
 
 #launch a terminal on boot
-exec --no-startup-id i3-msg "workspace 1; exec --no-startup-id kitty --class=tmux-startup tmux new-session -A -s main"
+exec --no-startup-id i3-msg "workspace 1; exec --no-startup-id kitty"
+
 
 #redshift too?
 exec --no-startup-id i3-msg "exec redshift"
