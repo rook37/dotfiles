@@ -35,6 +35,7 @@ fi
 
 # load personal aliases if they exist
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
+[ -f "$HOME/.aliases_priv" ] && source "$HOME/.aliases_priv"
 
 # z init
 eval "$(zoxide init zsh)"
