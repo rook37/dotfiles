@@ -1,47 +1,54 @@
+# 1 - processes in shorthand 
 
-# --- cls > clear ---
-alias cls='clear'
+    # --- cls > clear ---
+
+    alias cls='clear'
+
+    # --- src > source---
+    alias src='source'
+    
+    # --- eza > ls ---
+    alias ls='eza --icons --git'
+    alias lst='eza -l --tree --icons --git'
+    alias lsa='eza -al --icons --git' 
+    alias lsta='eza -al --tree --icons --git'
+
+# 2 - me vs the space bar
+    
+
+    # zsh git plugin needs a 'list all' command
+    alias ghelp="alias | grep -E 'git|^alias g'"
+
+    # --- tmux basic QoL aliases ---
+    
+    alias tm="tmux"
+    alias tma="tmux attach -t"          # opens session with whatever name follows
+    alias tmls="tmux ls"                # shows open sessions
+    alias tmo="tmux choose-session"     # opens list of current sessions as a selectable panel
+    alias tmn="TMUX= tmux new -s"       # creates new session with whatever name follows, even in a session 
+    alias tmd='tmux detach'             # i am lazy lol
+
+    # i like relevantly named panes, even with active processes
+            
+    alias tmrn="tmux rename-session"    # rename session shorthand
+    alias tmp="tmux select-pane -T"     # pane rename shorthand
+    alias tmpu="tmux select-pane -U -T" # pane rename above
+    alias tmpl="tmux select-pane -L -T" # pane rename L
+    alias tmpr="tmux select-pane -R -T" # pane rename R
+    alias tmpd="tmux select-pane -D -T" # pane rename below
+
+# 3 - program launch
+
+    # --- runelite 4 lazy typers ---
+    alias runelite="flatpak run com.adamcake.Bolt"
+    alias rune="tmp rune && runelite"
+
+    # --- lets try zen ---
+    alias zen="tmp zen && flatpak run app.zen_browser.zen"
+
+# 4 - layouts
  
-# --- src > source---
-alias src='source'
-  
-# --- eza > ls ---
-alias ls='eza --icons --git'
-alias lst='eza -l --tree --icons --git'
-alias lsa='eza -al --icons --git' 
-alias lsta='eza -al --tree --icons --git'
-
-# --- load notes layout ---
-alias loadnotes="$HOME/.config/i3/layouts/learning/studylaunch.sh" #follow with the workspace you want it on
+    # --- load notes layout ---
+    alias loadnotes="$HOME/.config/i3/layouts/learning/studylaunch.sh" #follow with the workspace you want it on
 
 
-# ---------me vs the space bar---------
-
-alias ghelp="alias | grep -E 'git|^alias g'"
-
-    # --- tmux QoL aliases ---
-
-alias tm="tmux"
-alias tma="tmux attach -t"          # opens session with whatever name follows
-alias tmls="tmux ls"                # shows open sessions
-alias tmo="tmux choose-session"     # opens list of current sessions as a selectable panel
-alias tmn="TMUX= tmux new -s"       # creates new session with whatever name follows. 
-                                    # TMUX= allows this to create a new top-level session from inside one as well.
-alias tmd='tmux detach'             # i am lazy lol
-
-    #   renaming 
-
-alias tmrn="tmux rename-session"    # rename session shorthand
-alias tmp="tmux select-pane -T"     # pane rename shorthand
-alias tmpu="tmux select-pane -U -T" # pane rename above
-alias tmpl="tmux select-pane -L -T" # pane rename L
-alias tmpr="tmux select-pane -R -T" # pane rename R
-alias tmpd="tmux select-pane -D -T" # pane rename below
-
-# -------------programs---------------
-
-# --- runelite 4 lazy typers ---
-alias runelite="flatpak run com.adamcake.Bolt"
-
-# --- lets try zen ---
-alias zen="flatpak run app.zen_browser.zen"
