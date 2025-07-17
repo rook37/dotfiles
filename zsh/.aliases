@@ -1,4 +1,7 @@
-# 1 - processes in shorthand 
+# 1 - processes, either shorthand or easier to remember
+
+    # wifi
+    alias wifi='nmtui'
 
     # --- cls > clear ---
 

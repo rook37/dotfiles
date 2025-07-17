@@ -49,6 +49,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 exec --no-startup-id xrandr --output DP-2 --right-of eDP-1-0 --auto
 exec --no-startup-id xrandr --output DP-2 --right-of eDP-1-1 --auto
+
+# background
+exec_always --no-startup-id feh --bg-scale ~/dotfiles/kitty/pastel-japan-cat-wallpaper.png 
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
