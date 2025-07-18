@@ -6,7 +6,8 @@ ZSH_THEME=""
 
 # plugins 
 plugins=(git z zsh-autosuggestions zsh-syntax-highlighting tmux)
-export GIT_PAGER=cat
+export GIT_PAGER=""
+export PAGER=""
 
 # load oh-my-zsh
 source "$ZSH/oh-my-zsh.sh"
@@ -43,7 +44,7 @@ eval "$(zoxide init zsh)"
 # environment
 export EDITOR=nvim
 export VISUAL=nvim
-export PATH="$HOME/scripts:$HOME/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/scripts:$HOME/go/bin:$HOME/bin:$HOME/.local/bin:$PATH"
 
 # less annoying history
 HISTSIZE=10000

@@ -3,6 +3,13 @@
     # wifi
     alias wifi='nmtui'
 
+    # image viewer
+    alias icat="kitten icat"
+    alias icatsm='echo "\n\n\n\n\n" && kitten icat --place 20x20@80x0'
+
+    # gg easy(effects)
+    alias easyeffects="flatpak run com.github.wwmm.easyeffects"
+
     # --- cls > clear ---
 
     alias cls='clear'
