@@ -4,7 +4,7 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 map('n', '<leader>w', ':w<CR>', opts)
-map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+map('n', '<leader>e', ':Neotree toggle filesystem reveal left<CR>', opts)
 map('n', '<leader>q', ':bd<CR>', opts)
 map('n', '<leader>ff', function()
   require('telescope.builtin').find_files()
